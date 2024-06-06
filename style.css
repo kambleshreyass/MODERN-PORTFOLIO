@@ -37,3 +37,27 @@ html,body{
 .ri-menu-line{
   display: none;
 }
+#home{
+  padding: 20px 100px;
+}
+#home h1{
+  text-align: center;
+  font-size: 5vw;
+}
+#home h2{
+  text-align: center;
+  font-size: 2vw;
+}
+#home p{
+  text-align: center;
+  padding: 0 150px;
+  font-size: 15px;
+}
+#home img{
+  width: 300px;
+}
+.img-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
