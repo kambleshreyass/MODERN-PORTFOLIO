@@ -92,7 +92,7 @@ body{
 #about{
   min-height: 100%;
   width: 100%;
-  background-color: green;
+  background-color: #94ecf4;
 }
 #about h1{
   text-align: center;
@@ -122,6 +122,14 @@ body{
   align-items: center;
   justify-content: center;
 }
+.skill-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-image img{
+  padding: 10px 20px 50px;
+}
 .icon{
   font-size: 10vw;
   color: rgb(0, 0, 0);
@@ -129,6 +137,7 @@ body{
 #project{
   min-height: 100%;
   width: 100%;
+  background-color: rgb(53, 30, 30);
 }
 .check{
   width: 350px;
@@ -138,6 +147,14 @@ body{
   margin: 20px 20px;
   color: black;
   cursor: pointer;
+  background-color: crimson;
+  border: none;
+}
+.check:hover{
+  box-shadow: 7px 10px 1px 5px;
+  padding: 10px;
+  background-color: rgb(206, 21, 58);
+  border: none;
 }
 .check a{
   text-decoration: none; 
@@ -145,6 +162,85 @@ body{
 .btn{
   display: flex;
   align-items: center;
+  justify-content: center; 
+}
+.project-image-container{
+  display: flex;
+  align-items: center;
   justify-content: center;
-  
+  flex-wrap: wrap;
+}
+.project-one{
+  width: 370px;
+  /* background-color: rgb(233, 233, 233); */
+  margin: 20px 10px;
+  border-radius: 20px;
+}
+.project-two{
+  width: 370px;
+  /* background-color: rgb(233, 233, 233); */
+  margin: 20px 10px;
+  border-radius: 20px;
+}
+.project-three{
+  width: 370px;
+  /* background-color: rgb(233, 233, 233); */
+  margin: 20px 10px;
+  border-radius: 20px;
+}
+.project-four{
+  width: 370px;
+  /* background-color: rgb(233, 233, 233); */
+  margin: 20px 10px;
+  border-radius: 20px;
+}
+.project-five{
+  width: 370px;
+  /* background-color: rgb(233, 233, 233); */
+  margin: 20px 10px;
+  border-radius: 20px;
+}
+.project-six{
+  width: 370px;
+  /* background-color: rgb(233, 233, 233); */
+  margin: 20px 10px;
+  border-radius: 20px;
+}
+.screenshot{
+  object-fit: cover;
+  width: 370px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.screenshot:hover{
+  box-shadow: 7px 10px 1px 5px;
+  cursor: pointer;
+}
+.git h1{
+  text-align: center;
+  padding: 20px 30px;
+}
+.git{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.git .github{
+  width: 400px;
+  border-radius: 10%;
+  position: absolute;
+  height: 300px;
+}
+.profile{
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0 40px;
+}
+.git .git-svg{
+  width: 400px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.git .github:hover{
+  width: 0;
 }
