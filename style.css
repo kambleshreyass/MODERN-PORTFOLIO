@@ -14,13 +14,22 @@ html,body{
 body{
   overflow-x: hidden;
 }
-.hamburger{
-  display: none;
+#cursor{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  z-index: 9999;
+  
 }
-#hamburger{
-  height: 100%;
-  width: 100%;
-  background-color: black;
+#cursor h1{
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  padding: 20px 0;
   display: none;
 }
 #container{
@@ -45,6 +54,10 @@ body{
   padding: 20px;
   font-size: 20px;
   text-decoration: none;
+  font-weight: 600;
+}
+.nav-list a:hover{
+  color: red;
 }
 .ri-menu-line{
   display: none;
@@ -61,20 +74,24 @@ body{
   text-align: center;
   font-size: 2vw;
   padding: 30px 10px;
+  font-weight: 400;
 }
 #home p{
   text-align: center;
   padding: 0 150px;
   font-size: 15px;
   padding: 10px 10px;
+  
 }
 #home h3{
   text-align: center;
   padding: 30px 10px;
   font-size: 3vw;
+  font-weight: 400;
 }
 #home span{
   color: rgb(238, 32, 32);
+  font-weight: 600;
 }
 #home img{
   width: 100px;
@@ -114,13 +131,16 @@ body{
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-weight: 500;
 }
 #about span{
   color: rgb(238, 32, 32);
+  font-weight: 600;
 }
 #about h2{
   text-align: center;
   font-size: 5vw;
+  color: rgb(216, 216, 32);
 }
 #about .loading{
   width: 50px;
@@ -276,15 +296,31 @@ body{
   align-items: center;
   justify-content: center;
 }
-#contact .animated span{
+#contact #move{
+  background-color: #D8FF04;
+  display: flex;
+  padding: 2vw 0;
+  overflow: hidden;
+}
+#contact #move span{
   color: red;
 }
-#contact .animated h3,span{
+#contact #move h3,span{
   font-size: 33px;
+  color: black;
+}
+#contact .marque{
+  display: flex;
+  align-items: center;
+  padding: 0 1.9vw;
+  flex-shrink: 0;
 }
 
 @media (max-width:700px) {
   .nav-list a{
+    display: none;
+  }
+  #cursor{
     display: none;
   }
   #about span{
@@ -437,15 +473,19 @@ body{
     min-height: 100%;
     width: 100%;
     background-color: black;
-  }
-  .hamburger{
     display: block;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+  }
+  #cursor{
     display: none;
   }
+  /* .hamburger{
+    
+    flex-direction: column;
+    display: block;
+  } */
   .hamburger .hum{
     font-size: 33px;
     text-decoration: none;
